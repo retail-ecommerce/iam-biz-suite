@@ -14,10 +14,10 @@ targetCompatibility = JavaVersion.VERSION_1_8
 sourceSets {
     main {
         java {
-            srcDirs = ['WEB-INF/caf_core_src', 'WEB-INF/caf_custom_src', 'WEB-INF/shuxiang_core_src', 'WEB-INF/shuxiang_custom_src']
+            srcDirs = ['WEB-INF/caf_core_src', 'WEB-INF/caf_custom_src', 'WEB-INF/iam_core_src', 'WEB-INF/iam_custom_src']
         }
         resources {
-            srcDirs = ['WEB-INF/caf_core_src', 'WEB-INF/caf_custom_src', 'WEB-INF/shuxiang_core_src', 'WEB-INF/shuxiang_custom_src']
+            srcDirs = ['WEB-INF/caf_core_src', 'WEB-INF/caf_custom_src', 'WEB-INF/iam_core_src', 'WEB-INF/iam_custom_src']
         }
     }
     test {
@@ -76,7 +76,7 @@ dependencies {
 
 war {
     from 'viewlayers'
-    archiveName = 'shuxiang.war'
+    archiveName = 'iam.war'
     webXml = file('WEB-INF/web.xml')
 }
 
