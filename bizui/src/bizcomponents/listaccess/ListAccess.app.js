@@ -189,7 +189,7 @@ class ListAccessBizApp extends React.PureComponent {
   getPageTitle = () => {
     // const { location } = this.props
     // const { pathname } = location
-    const title = 'null'
+    const title = 'Identify Access Services'
     return title
   }
  
