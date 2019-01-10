@@ -77,7 +77,7 @@ public class IamUserContextImpl extends UserContextImpl implements IamUserContex
 	public Map<String,String> getLocaleMap(){
 		
 		init();
-		return chineseMap;
+		return englishMap;
 		
 	}
 	
