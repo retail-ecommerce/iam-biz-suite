@@ -9,19 +9,19 @@
 	<bean id="checker" class="com.terapico.iam.IamChecker" scope="prototype"></bean>
 
 	<bean id="userDomainManagerBase" class="com.terapico.iam.userdomain.UserDomainManagerImpl"/>
-	<bean id="userDomainManager" class="com.terapico.iam.userdomain.UserDomainManagerImpl" parent="userDomainManagerBase" ></bean>
+	<bean id="userDomainManager" class="com.terapico.iam.userdomain.UserDomainCustomManagerImpl" parent="userDomainManagerBase" ></bean>
 	
 	<bean id="userWhiteListManagerBase" class="com.terapico.iam.userwhitelist.UserWhiteListManagerImpl"/>
 	<bean id="userWhiteListManager" class="com.terapico.iam.userwhitelist.UserWhiteListManagerImpl" parent="userWhiteListManagerBase" ></bean>
 	
 	<bean id="secUserManagerBase" class="com.terapico.iam.secuser.SecUserManagerImpl"/>
-	<bean id="secUserManager" class="com.terapico.iam.secuser.SecUserManagerImpl" parent="secUserManagerBase" ></bean>
+	<bean id="secUserManager" class="com.terapico.iam.secuser.SecUserCustomManagerImpl" parent="secUserManagerBase" ></bean>
 	
 	<bean id="secUserBlockingManagerBase" class="com.terapico.iam.secuserblocking.SecUserBlockingManagerImpl"/>
-	<bean id="secUserBlockingManager" class="com.terapico.iam.secuserblocking.SecUserBlockingManagerImpl" parent="secUserBlockingManagerBase" ></bean>
+	<bean id="secUserBlockingManager" class="com.terapico.iam.secuserblocking.SecUserBlockingCustomManagerImpl" parent="secUserBlockingManagerBase" ></bean>
 	
 	<bean id="userAppManagerBase" class="com.terapico.iam.userapp.UserAppManagerImpl"/>
-	<bean id="userAppManager" class="com.terapico.iam.userapp.UserAppManagerImpl" parent="userAppManagerBase" ></bean>
+	<bean id="userAppManager" class="com.terapico.iam.userapp.UserAppCustomManagerImpl" parent="userAppManagerBase" ></bean>
 	
 	<bean id="listAccessManagerBase" class="com.terapico.iam.listaccess.ListAccessManagerImpl"/>
 	<bean id="listAccessManager" class="com.terapico.iam.listaccess.ListAccessManagerImpl" parent="listAccessManagerBase" ></bean>
